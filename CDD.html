@@ -8,30 +8,140 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <style>
         #header {
-            background-image:url(img/header2.jpg);
+            background-image:url(img/header.png);
             background-size: 100% 100%;
-            width: 100%; height: 250px;
+            width: 100%; height: 300px;
             
         }
     </style>
 <body>
-<div id="header" class="row">
-       <div class="col-md-12">
+<div class="row">
+       <div class="col-md-12" id="header">
        </div>
+</div>
+<div class="row" style="margin-top: 50px;">
+    <div class="col-md-2"></div>
+    <div class="col-md-8" style="text-align: center;">
+        <h1> 지치지 않는 개발자 이준용 입니다.</h1>
+        
+    </div>
+    <div class="col-md-2"></div>
+</div> 
+<div class="row" style="margin-left: 300px; margin-right: 300px;">
+    <div class="col-md-6" style="margin-top: 100px;">
+        <div class="thumbnail">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="text-align: center;">프로젝트명 : 캣댕댕 ( 반려동물 SNS ) </h2>
+                </div>
+            </div><br />
+            <h4>개발목표</h4>
+            <ul>
+                <li>나의 반려동물을 소개하고 반려 동물의 지식을 얻고싶은 사람들에게 공유</li>
+                <li>상황이 되지 않아 키우지 못하는 이용자에게는 대리만족</li>
+                <li>키우기 전 일지를 통하여 여러 가지의 지식을 배울 수 있다.</li>
+                <li>SNS 형식의 웹사이트로 누구나 쉽게 접근할 수 있고 정보를 얻을 수 있게 한다.</li>
+            </ul>
+            <h4>개발환경</h4>
+            <ul>
+                <li>OS : Window 10</li>
+                <li>Language/Skills : Java, JSP, jQuery & Ajax,HTML,CSS
+                </li>
+                <li>Framework : Spring Framework , Bootstrap Framework</li>
+                <li>DBMS : Oracls.11g</li>
+                <li>Server : Tomcat8.5</li>
+                <li>개발 Tool : Eclipse, Dbeaver</li>
+            </ul>
+            <h4>구현기능</h4>
+            <ul>
+                <li>회원 : 로그인, 회원가입, 회원수정, 북마크,Feed,AllFeed,내 프로필</li>
+                <li>관리자 : 신고 접수, 회원 관리, 반려동물추가</li>
+            </ul>
+            <h4>담당역할</h4>
+            <ul>
+                <li> 내 프로필 : 내 프로필 화면 구상 /펫 정보 CRUD/ 일지 CRUD / 일정 CRUD / </li>
+            </ul>
+            <h4>프로젝트 코드</h4>
+            <ul>
+                <li>
+                    GitHub : 
+                    <a href="https://github.com/JYoung-lee/CDD" target='_blank'>
+                    https://github.com/JYoung-lee/CDD
+                    </a>
+                </li>  
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-6" style="margin-top: 100px;">
+        <div class="thumbnail">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="CDDImg/UserProfile.JPG" width="100%;" height="500px;" style="margin-left: 0px; margin-right: 0px;" >
+               </div>
+            </div>
+        <h4>화면 및 구현기능 설명</h4>
+        <ul>
+            <li>내 프로필 화면 - 달력의 날짜 클릭시 해당 일지와 일정을 볼 수 있다.</li>
+        </ul>
+        </div>
+    </div>
 </div>
 <div class="row" style="margin-left: 300px; margin-right: 300px;">
     <div class="col-md-6" style="margin-top: 100px;">
         <div class="thumbnail">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="img/CDD.JPG" width="100%;" height="400px;" style="margin-left: 0px; margin-right: 0px;" >
+                    <img src="CDDImg/UserProfile-AddNote.JPG" width="100%;" height="500px;" style="margin-left: 0px; margin-right: 0px;" >
                </div>
             </div>
-        <h3>Thumbnail label</h3>
+        <h4>화면 및 구현기능 설명</h4>
         <ul>
-            <li>아아</li>
-            <li>아아</li>
-            <li>아아</li>
+            <li>일지 화면 - 펫의 하루일지 등록</li>
+            <li>부트스트랩 Modal 사용,날짜 선택은 datepicker 사용</li>
+        </ul>
+        </div>
+    </div>
+    <div class="col-md-6" style="margin-top: 100px;">
+        <div class="thumbnail">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="CDDImg/UserProfile-NoteList.JPG" width="100%;" height="500px;" style="margin-left: 0px; margin-right: 0px;" >
+               </div>
+            </div>
+        <h4>화면 및 구현기능 설명</h4>
+        <ul>
+            <li>일지 리스트 화면 - 유저의 모든 일지 목록 리스트 수정 / 삭제 </li>
+            <li>부트스트랩 Modal 사용,수정은 등록창을 수정창으로 사용,삭제는 Ajax 비동기 처리하여 삭제</li>
+        </ul>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-left: 300px; margin-right: 300px;">
+    <div class="col-md-6" style="margin-top: 100px;">
+        <div class="thumbnail">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="CDDImg/UserProfile-AddSchedules.JPG" width="100%;" height="500px;" style="margin-left: 0px; margin-right: 0px;" >
+               </div>
+            </div>
+        <h4>화면 및 구현기능 설명</h4>
+        <ul>
+            <li>일정 등록 화면 - 펫의 일정 등록</li>
+            <li>부트스트랩 Modal 사용, 달력 API 사용하여 날짜 클릭이벤트 가능하도록 구현</li>
+        </ul>
+        </div>
+    </div>
+    <div class="col-md-6" style="margin-top: 100px;">
+        <div class="thumbnail">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="CDDImg/UserProfile-SchedulesList.JPG" width="100%;" height="500px;" style="margin-left: 0px; margin-right: 0px;" >
+               </div>
+            </div>
+        <h4>화면 및 구현기능 설명</h4>
+        <ul>
+            <li>일정 리스트 화면 - 유저의 모든 일정 목록 리스트 수정 / 삭제</li>
+            <li>부트스트랩 Modal 사용,수정은 등록창을 수정창으로 사용,삭제는 Ajax 비동기 처리하여 삭제</li>
         </ul>
         </div>
     </div>
